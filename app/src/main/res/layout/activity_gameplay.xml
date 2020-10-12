@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound1"
+    tools:context=".GameplayActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/picthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/pict1" />
+
+            <TextView
+                android:id="@+id/promotext"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Prove yourself in the online battle arena that is Heroes Evolved !"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btninstal"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_margin="10dp"
+                android:background="@drawable/instalnow"
+                android:onClick="instal"
+                android:text="Instal Now !"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/btnhelp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top|right"-->
+            <!--android:background="@drawable/ic_help_black_24dp"-->
+            <!--android:onClick="help"/>-->
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item1judul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/moba" />
+
+                <TextView
+                    android:id="@+id/judul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="MEMAHAMI PETA PERMAINAN 3 LINE"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnread1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/instalnow"
+                    android:text="Read Here >"
+                    android:textSize="10dp"
+                    android:onClick="readitem1"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="MENGENDALIKAN HERO"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/instalnow"
+                    android:onClick="readitem2"
+                    android:text="Read Here >"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item3"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="MEMAHAMI SKILL HERO DAN ROLE NYA"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/instalnow"
+                    android:onClick="readitem3"
+                    android:text="Read Here >"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="WARDING"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/instalnow"
+                    android:text="Read Here >"
+                    android:textSize="10dp"
+                    android:onClick="readitem4"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

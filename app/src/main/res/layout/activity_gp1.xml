@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound1"
+    tools:context=".GP1Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boxbig"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/moba" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="MEMAHAMI PETA PERMAINAN 3 LINE"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/item2one"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item1one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="  Heroes Evolved dimainkan 5 lawan 5 di arena yang bernama Altar of Strife. Altar of Strife memiliki 3 lane (atas, mid dan bawah). Masing-masing tim nantinya akan mencoba untuk menghancurkan Aegis (i) lawannya. Tiap Aegis akan dilindungi oleh 3 tower (ii) di masing-masing lane yang harus tim kamu hancurkan sebelum bisa menyerang Aegis lawan."
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/item2two"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item1two" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="  Area di sekitar lane yang diselimuti Fog of War biasa disebut Jungle. Di dalam Jungle kamu akan temuin banyak jungle creep. Selain creep, Jungle juga memiliki 2 forest protector (iii) yang akan memberikan buff secara acak untuk hero yang berhasil bunuh mereka."
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/item2three"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item1three" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="  Kedua tim dipisahkan sebuah oleh sungai yang membagi arena permainan jadi dua. Di tengah-tengah kedua sisi sungai kamu akan temukan markas dari monster kuat yaitu Dragon (iv) dan Zakar (v)."
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/item2four"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item1four" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="  Saat salah satu hero mati, dia akan respawn di fountain (vi) tim-nya. Hero yang berdiri di area fountain akan dipulihkan darah dan mana-nya."
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/bghome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/picthome"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha=".90"
+                android:background="@drawable/welcome"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/clickme"
+
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+
+            android:background="@drawable/btnclickme"
+            android:fontFamily="@font/arbutus_slab"
+            android:lineSpacingExtra="10sp"
+            android:shadowColor="#F3EBEB"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Click to see GUIDE"
+
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/gameplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/item1"
+                android:clickable="true"
+                android:onClick="gameplaybtn"/>
+
+            <TextView
+                android:id="@+id/gameplaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="40dp"
+                android:clickable="false"
+                android:text="GAMEPLAY"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gameplaytext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                android:text="Learn how to play Heroes Evolve"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/hero"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/heroes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/boxitem"
+                android:background="@color/colorWhite"
+                android:src="@drawable/zeus"
+                android:clickable="true"
+                android:onClick="heroesbtn"/>
+
+            <TextView
+                android:id="@+id/heroestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="40dp"
+                android:clickable="false"
+                android:text="HEROES"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/heroestext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                android:text="List of heroes that you can use"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/modes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/boxitem2"
+                android:background="@color/colorAccent"
+                android:src="@drawable/gatau"
+                android:clickable="true"
+                android:onClick="modes"/>
+
+            <TextView
+                android:id="@+id/modestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="40dp"
+                android:clickable="false"
+                android:text="MODES"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/modestext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                android:text="Various modes that you can play"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

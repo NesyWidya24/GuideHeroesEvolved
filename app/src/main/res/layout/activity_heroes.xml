@@ -1,0 +1,2176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/herolayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bghero"
+    tools:context=".GameplayActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/picthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha=".85"
+                android:background="@drawable/heroes" />
+
+            <TextView
+                android:id="@+id/promotext"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Click hero for more information"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!--Button Linear-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnhero1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/judulhero"
+                android:gravity="center"
+                android:text="Strength"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/btnhero2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/judulhero"
+                android:gravity="center"
+                android:text="Agility"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/btnhero3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/judulhero"
+                android:gravity="center"
+                android:text="Intelligence"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <!--linear strength-->
+
+        <TextView
+            android:id="@+id/txtstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="STRENGTH"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--linear bonnie-->
+            <LinearLayout
+                android:id="@+id/item1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/hero1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bonnie" />
+
+                <TextView
+                    android:id="@+id/judul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="BONNIE"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/hero2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/burni" />
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="BURNINATOR"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir linear strength-->
+
+        <!--awal text bonnie-->
+
+        <LinearLayout
+            android:id="@+id/text1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="RANGER | NUKER"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/phsycal"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="9\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/magic"
+                        android:layout_marginRight="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/def"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/stat"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8\nDIFFICULTY"
+                        android:textSize="13dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bonnieskill1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Bullet Storm | (Badai Peluru) \nPhysical"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero1skill1"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bonnieskill2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Timed Explosives | (Peledak Berwaktu)\n Disable | Rush"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero1skill2"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bonnieskill3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Volley | (Voli)\nUlt | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero1skill3"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bonnieskill4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Gatling Gun | (Senapan Gatling)\nPasif | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero1skill4"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text bonnie-->
+
+        <!--awal text burni-->
+
+        <LinearLayout
+            android:id="@+id/text2"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Melee	| Durable | Disabler"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/phsycal"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="7\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/magic"
+                        android:layout_marginRight="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/def"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/stat"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="3\nDIFFICULTY"
+                        android:textSize="13dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/burniskill1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Fist of Hell | (Tinju Neraka) \nPhysical | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero2skill1"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/burniskill2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Hellish Stomp | (Injakan Neraka)\nMagic | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero2skill2"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/burniskill3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Fel Bargain | (Bisnis Fel)\nUlt | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero2skill3"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/burniskill4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Hellfire | (Api Neraka)\nPasif | Magic"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero2skill4"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text burni-->
+
+        <!--item 2-->
+
+        <!--linear agility-->
+
+        <TextView
+            android:id="@+id/txtagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AGILITY"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--linear mikio-->
+            <LinearLayout
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/hero3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/mikio" />
+
+                <TextView
+                    android:id="@+id/judul3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="MIKIO"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/hero4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/lapina" />
+
+                    <TextView
+                        android:id="@+id/judul4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="LAPINA"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir linear agility-->
+
+        <!--awal text mikio-->
+
+        <LinearLayout
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Melee | Ganker | Nuker"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/phsycal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="9\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="19dp"
+                        android:background="@drawable/magic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/def" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="4\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/stat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="4\nDIFFICULTY"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mikioskill1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Skybreaker | (Pemecah Langit)\nPhysical | Rush | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero3skill1"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mikioskill2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Earthshatter | (Remuk Bumi)\n Physical | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero3skill2"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mikioskill3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Whirlwind | (Angin Puyuh)\nUlt | Physical"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero3skill3"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mikioskill4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Kendo\nPhysical"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero3skill4"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text mikio-->
+
+        <!--awal text lapina-->
+
+        <LinearLayout
+            android:id="@+id/text4"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ranged | Pusher"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/phsycal"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/magic"
+                        android:layout_marginRight="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/def"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/stat"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="7\nDIFFICULTY"
+                        android:textSize="13dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lapinaskill1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Rabbit Speed | (Kecepatan Kelinci)\nRush | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero4skill1"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lapinaskill2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Bunny Bomb | (Bom Kelinci)\nPhysical | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero4skill2"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lapinaskill3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Bunny Stunner | (Kelinci Pelumpuh)\nUlt | Physical | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero4skill3"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lapinaskill4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Lucky Bunny | (Kelinci Keberuntungan)\nPasif | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero4skill4"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text lapina-->
+
+
+        <!--item 3-->
+
+        <!--linear agility-->
+
+        <TextView
+            android:id="@+id/txtint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Intelligence"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--linear posei-->
+            <LinearLayout
+                android:id="@+id/item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/hero5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/poseidon" />
+
+                <TextView
+                    android:id="@+id/judul5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="POSEIDON"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/item6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/hero6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/una" />
+
+                    <TextView
+                        android:id="@+id/judul6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="UNA"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir linear agility-->
+
+        <!--awal text posei-->
+
+        <LinearLayout
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Melee | Nuker | Disabler"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/phsycal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="3\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="19dp"
+                        android:background="@drawable/magic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/def" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/stat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="6\nDIFFICULTY"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/poseiskill1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Soul of The Sea | Jiwa Samudra\nMagic | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero5skill1"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/poseiskill2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Tidal Barrage | (Rentetan Gelombang)\nMagic| Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero5skill2"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/poseiskill3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Poseidon's Trident | (Trisula Poseidon)\nUlt | Magic | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero5skill3"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/poseiskill4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Oceanic Power | (Kekuatan Kelautan)\nPasif | Magic | Buff"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero5skill4"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text posei-->
+
+        <!--awal text una-->
+
+        <LinearLayout
+            android:id="@+id/text6"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/boxbig"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ranged | Ganker | Pusher"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <!--awal physical-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/phsycal"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="3\nPHYSICAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--akhir linear physical-->
+
+                <!--linear magic-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/magic"
+                        android:layout_marginRight="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8\nMAGIC"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--awal def-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/def"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5\nDEFENSE"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+                <!--ahkir def-->
+
+                <!--awal difficulty-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/stat"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="6\nDIFFICULTY"
+                        android:textSize="13dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--linear pict & judul skill-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/unaskill1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Fire Crackers | (Mercon)\nMagic"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero6skill1"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/unaskill2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Timed Explosion | (Ledakan Berwaktu)\nMagic| Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero6skill2"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <!--awal skill 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/unaskill3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Fireworks | (Kembang Api)\nUlt"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero6skill3"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--awal skill 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/unaskill4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="Mockery | (Ejekan)\nPasif | Magic | Disable"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--linear detai skill4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_margin="5dp"
+                    android:text="@string/hero6skill4"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--akhir text una-->
+
+    </LinearLayout>
+
+</ScrollView>
